@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <style>
+        html,
+        body {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            place-items: center;
+            background: -webkit-linear-gradient(right, #5e5be4, #bf5bea);
+        }
+        
+        .wrapper {
+            overflow: hidden;
+            background: #fff;
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .wrapper .title-text {
+            width: 200%;
+        }
+        
+        .wrapper .title {
+            width: 50%;
+            font-size: 35px;
+            font-weight: 600;
+            text-align: center;
+            padding: 0 0 20px 0;
+            border-bottom: 1px solid silver;
+            transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .form-inner form .field {
+            height: 50px;
+            width: 400px;
+            margin-top: 20px;
+            border: none;
+            border-bottom: 1px solid silver;
+        }
+        
+        .form-inner form .field input {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            padding-left: 15px;
+            border-radius: 5px;
+            border: 1px solid lightgrey;
+            border-bottom-width: 2px;
+            font-size: 17px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-inner form .field input:focus {
+            border-color: #fc83bb;
+        }
+        
+        .form-inner form .pass-link {
+            margin-top: 10px;
+        }
+        
+        .form-inner form .pass-link a,
+        .form-inner form .signup-link a {
+            padding-top: 15px;
+            color: rgb(24, 134, 237);
+            text-decoration: none;
+        }
+        
+        form .btn {
+            height: 50px;
+            width: 100%;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        form .btn .btn-layer {
+            height: 100%;
+            width: 300%;
+            position: absolute;
+            background: #238bec;
+            border-radius: 10px;
+        }
+        
+        form .btn input[type="submit"] {
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            position: relative;
+            background: none;
+            border: none;
+            color: #fff;
+            padding-left: 0;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">
+                Login
+            </div>
+        </div>
+        <div class="slide-controls">
+        </div>
+        <div class="form-inner">
+            <form action="#">
+                <div class="field">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="pass-link">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Login">
+                </div>
+                <div class="signup-link">
+                    Not a member? <a href="">Signup now</a>
+                </div>
+            </form>
+
+
+        </div>
+        </form>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
